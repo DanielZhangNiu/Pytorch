@@ -22,7 +22,7 @@ class Model(nn.Module):
         In the forward function we accept a Variable of input data and we must return
         a Variable of output data.
         """
-        y_pred = sigmoid(self.linear(x))
+        y_pred = F.sigmoid(self.linear(x))
         return y_pred
 
 
